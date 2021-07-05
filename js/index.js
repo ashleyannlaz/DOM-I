@@ -14,7 +14,7 @@ const siteContent = {
     "img-src": "img/header-img.png"
   },
   "main-content": {
-    "features-h4":"Features",
+    "features-h4": "Features",
     "features-content": "Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
     "about-h4":"About",
     "about-content": "About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.",
@@ -39,4 +39,43 @@ const siteContent = {
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.setAttribute('src', siteContent["nav"]["img-src"]);
+
+// CTA Section
+
+const domHeader = document.querySelector("section div h1")
+domHeader.textContent = siteContent.cta.h1;
+
+const domHeaderButton = document.querySelector("section div button")
+domHeaderButton.textContent = siteContent.cta.button;
+
+let ctaImage = document.getElementById("cta-img");
+ctaImage.setAttribute('src', siteContent["cta"]["img-src"]);
+
+
+// Main Content Section - Top Text
+const featuresHead = document.querySelector(".top-content .text-content h4")
+featuresHead.textContent = siteContent["main-content"]["features-h4"];
+
+const featuresText = featuresHead.nextElementSibling;
+featuresText.textContent = siteContent["main-content"]["features-content"];
+
+const aboutHead = featuresText.nextElementSibling;
+//aboutHead.textContent = siteContent["main-content"]["features-content"];
+
+// featuresHead.textContent = siteContent["main-content"]["features-h4"];
+
+// const featuresText = document.querySelector(".top-content .text-content p")
+// featuresText.textContent = siteContent["main-content"]["features-content"];
+
+
+// Image Section 
+const midImage = document.querySelector(".middle-img")
+midImage.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+// Contact
+
+// Footer
+const footerText = document.querySelector('footer p');
+footerText.textContent = siteContent["footer"]["copyright"];
+console.log(footerText)
