@@ -63,20 +63,21 @@ const topsContent = document.querySelectorAll('.top-content p')
 topsContent[0].textContent = siteContent["main-content"]["features-content"];
 topsContent[1].textContent = siteContent["main-content"]["about-content"];
 
-
-
-
-
 // Image Section - Done!
 const midImage = document.querySelector(".middle-img")
 midImage.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
-// Services
+// Services Product Vision
 
+const bots = document.querySelectorAll('.bottom-content h4')
+bots[0].textContent = siteContent["main-content"]["services-h4"];
+bots[1].textContent = siteContent["main-content"]["product-h4"];
+bots[2].textContent = siteContent["main-content"]["vision-h4"];
 
-// Product 
-
-// Vision
+const botsText = document.querySelectorAll('.bottom-content p')
+botsText[0].textContent = siteContent["main-content"]["services-content"];
+botsText[1].textContent = siteContent["main-content"]["product-content"];
+botsText[2].textContent = siteContent["main-content"]["vision-content"];
 
 // Contact - Done
 const contactHead = document.querySelector('.contact h4')
