@@ -45,6 +45,23 @@ navLinks[3].textContent = siteContent["nav"]["nav-item-4"];
 navLinks[4].textContent = siteContent["nav"]["nav-item-5"];
 navLinks[5].textContent = siteContent["nav"]["nav-item-6"];
 
+const home = document.createElement('a');
+home.textContent = 'Home';
+home.style.color = 'green';
+document.querySelector('nav').prepend(home);
+
+const ad = document.createElement('a');
+ad.textContent = 'Advertise';
+ad.style.color = 'green';
+document.querySelector('nav').appendChild(ad);
+
+navLinks[0].style.color = 'green';
+navLinks[1].style.color = 'green';
+navLinks[2].style.color = 'green';
+navLinks[3].style.color = 'green';
+navLinks[4].style.color = 'green';
+navLinks[5].style.color = 'green';
+
 console.log(navLinks[3])
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
