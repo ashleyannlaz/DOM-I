@@ -73,9 +73,20 @@ const aboutHead = featuresText.nextElementSibling;
 const midImage = document.querySelector(".middle-img")
 midImage.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
-// Contact
+// Contact - Done
+const contactHead = document.querySelector('.contact h4')
+contactHead.textContent = siteContent["contact"]["contact-h4"]
 
-// Footer
+address = contactHead.nextElementSibling;
+address.textContent = siteContent["contact"]["address"] 
+
+phone = address.nextElementSibling;
+phone.textContent = siteContent["contact"]["phone"] 
+
+email = phone.nextElementSibling;
+email.textContent = siteContent["contact"]["email"] 
+
+// Footer - Done!
 const footerText = document.querySelector('footer p');
 footerText.textContent = siteContent["footer"]["copyright"];
-console.log(footerText)
+
