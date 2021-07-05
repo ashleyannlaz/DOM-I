@@ -53,25 +53,30 @@ let ctaImage = document.getElementById("cta-img");
 ctaImage.setAttribute('src', siteContent["cta"]["img-src"]);
 
 
-// Main Content Section - Top Text
-const featuresHead = document.querySelector(".top-content .text-content h4")
-featuresHead.textContent = siteContent["main-content"]["features-h4"];
+// Features & About
 
-const featuresText = featuresHead.nextElementSibling;
-featuresText.textContent = siteContent["main-content"]["features-content"];
+const tops = document.querySelectorAll('.top-content h4')
+tops[0].textContent = siteContent["main-content"]["features-h4"];
+tops[1].textContent = siteContent["main-content"]["about-h4"];
 
-const aboutHead = featuresText.nextElementSibling;
-//aboutHead.textContent = siteContent["main-content"]["features-content"];
-
-// featuresHead.textContent = siteContent["main-content"]["features-h4"];
-
-// const featuresText = document.querySelector(".top-content .text-content p")
-// featuresText.textContent = siteContent["main-content"]["features-content"];
+const topsContent = document.querySelectorAll('.top-content p')
+topsContent[0].textContent = siteContent["main-content"]["features-content"];
+topsContent[1].textContent = siteContent["main-content"]["about-content"];
 
 
-// Image Section 
+
+
+
+// Image Section - Done!
 const midImage = document.querySelector(".middle-img")
 midImage.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
+
+// Services
+
+
+// Product 
+
+// Vision
 
 // Contact - Done
 const contactHead = document.querySelector('.contact h4')
